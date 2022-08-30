@@ -50,8 +50,8 @@
     Console.Write("Такого элемента нет");
  }
 
-   int a = Prompt("Input index a: ");
-   int b = Prompt("Input index b: "); 
+   int a = Prompt("Input index a: ")-1;
+   int b = Prompt("Input index b: ")-1; 
    int [,] array = FillArray(3,3);
    PrintArray(array);
    GetElement(array, a,b);
