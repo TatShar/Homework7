@@ -15,7 +15,7 @@ double [,] FillArray(int rows, int coloumns)
     {
         for (int j=0; j<array.GetLength(1); j++)
         {
-            array[i,j]=new Random().NextDouble()*10;
+            array[i,j]=new Random().NextDouble()*20-10;
         }
     }
     return array;
@@ -27,7 +27,7 @@ void PrintArray(double [,] array)
     {
         for (int j=0; j<array.GetLength(1); j++)
         {
-            Console.Write($"{array[i,j]} ");;
+            Console.Write($"{array[i,j]:F2}\t");
         }
         Console.WriteLine();
     }  
